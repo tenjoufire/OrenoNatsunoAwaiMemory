@@ -26,7 +26,7 @@ public class ChangeScene : MonoBehaviour {
 
     public void goGame2()
     {
-        SceneManager.LoadScene("Game2");
+        SceneManager.LoadScene("Calibration");
     }
 
     public void goGame3()

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ad_StarsporeBionics
+  m_Shader: {fileID: 4800000, guid: bd955d9832dd6414f9659a6e1e41041c, type: 3}
+  m_ShaderKeywords: _CLIPPEDTILES_ON _ROUNDCLIPPING_ON _SCALEAROUNDTILE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    IgnoreProjectors: true
+    RenderType: Transparent
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: ec26f057c79ef244f8c6e330ba910ab3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Noise
+      second:
+        m_Texture: {fileID: 2800000, guid: f38442fedb9aaa44288533c4f5007565, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Aberration
+      second: 0.25
+    - first:
+        name: _BlendDest
+      second: 10
+    - first:
+        name: _BlendSrc
+      second: 5
+    - first:
+        name: _ClippedTiles
+      second: 1
+    - first:
+        name: _CullMode
+      second: 0
+    - first:
+        name: _DoZWrite
+      second: 0
+    - first:
+        name: _EffectAberration
+      second: 0.25
+    - first:
+        name: _FlashAmount
+      second: 0.18
+    - first:
+        name: _IdleAmount
+      second: 1
+    - first:
+        name: _IdleSpeed
+      second: 0.05
+    - first:
+        name: _InvertIdle
+      second: 0
+    - first:
+        name: _InvertPhase
+      second: 0
+    - first:
+        name: _Overbright
+      second: 0.15
+    - first:
+        name: _Phase
+      second: 0
+    - first:
+        name: _PhaseRotation
+      second: 0.5
+    - first:
+        name: _PhaseSharpness
+      second: 0.3
+    - first:
+        name: _Radial
+      second: 1
+    - first:
+        name: _RoundClipping
+      second: 1
+    - first:
+        name: _ScaleAroundTile
+      second: 1
+    - first:
+        name: _ScanlineIntensity
+      second: 0.161
+    - first:
+        name: _Scattering
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 0.53103447, g: 1, b: 0, a: 1}
+    - first:
+        name: _ScaleCenter
+      second: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - first:
+        name: _Scaling
+      second: {r: 1, g: 1, b: 0, a: 0}
+    - first:
+        name: _TileCount
+      second: {r: 20, g: 20, b: 0, a: 0}

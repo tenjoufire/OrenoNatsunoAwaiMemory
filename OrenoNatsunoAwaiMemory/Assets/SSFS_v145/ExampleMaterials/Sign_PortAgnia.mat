@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sign_PortAgnia
+  m_Shader: {fileID: 4800000, guid: bd955d9832dd6414f9659a6e1e41041c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    IgnoreProjectors: true
+    RenderType: Transparent
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: bafa2f382baa73c449bd7ca186907d8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Noise
+      second:
+        m_Texture: {fileID: 2800000, guid: 5e4574d1d7863c24fa0a3067990b094c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Aberration
+      second: 0.1
+    - first:
+        name: _BlendDest
+      second: 1
+    - first:
+        name: _BlendSrc
+      second: 1
+    - first:
+        name: _ClippedTiles
+      second: 0
+    - first:
+        name: _CullMode
+      second: 0
+    - first:
+        name: _DoZWrite
+      second: 0
+    - first:
+        name: _EffectAberration
+      second: 0.2
+    - first:
+        name: _FlashAmount
+      second: 0.05
+    - first:
+        name: _IdleAmount
+      second: 0.25
+    - first:
+        name: _IdleSpeed
+      second: 0.05
+    - first:
+        name: _InvertIdle
+      second: 0
+    - first:
+        name: _InvertPhase
+      second: 0
+    - first:
+        name: _Overbright
+      second: 0.25
+    - first:
+        name: _Phase
+      second: 1
+    - first:
+        name: _PhaseRotation
+      second: 0.875
+    - first:
+        name: _PhaseSharpness
+      second: 0.1
+    - first:
+        name: _Radial
+      second: 1
+    - first:
+        name: _RoundClipping
+      second: 0
+    - first:
+        name: _ScaleAroundTile
+      second: 0
+    - first:
+        name: _ScanlineIntensity
+      second: 0.25
+    - first:
+        name: _Scattering
+      second: 0.2
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 0.7231237, b: 0.42647058, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _ScaleCenter
+      second: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - first:
+        name: _Scaling
+      second: {r: -0.5, g: -0.3, b: 0, a: 0}
+    - first:
+        name: _TileCount
+      second: {r: 2000, g: 2000, b: 0, a: 0}

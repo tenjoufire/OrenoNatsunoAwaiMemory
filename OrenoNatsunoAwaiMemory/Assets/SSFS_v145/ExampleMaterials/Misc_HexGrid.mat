@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Misc_HexGrid
+  m_Shader: {fileID: 4800000, guid: bd955d9832dd6414f9659a6e1e41041c, type: 3}
+  m_ShaderKeywords: _INVERTIDLE_ON _INVERTPHASE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    IgnoreProjectors: true
+    RenderType: Transparent
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 231a7e740c246884cbfec440844f4ce4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Noise
+      second:
+        m_Texture: {fileID: 2800000, guid: 5e4574d1d7863c24fa0a3067990b094c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Aberration
+      second: 0.393
+    - first:
+        name: _BlendDest
+      second: 1
+    - first:
+        name: _BlendSrc
+      second: 1
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _ClippedTiles
+      second: 0
+    - first:
+        name: _CullMode
+      second: 0
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DoZWrite
+      second: 0
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _EffectAberration
+      second: 0.139
+    - first:
+        name: _FlashAmount
+      second: 0.208
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _IdleAmount
+      second: 0.5
+    - first:
+        name: _IdleSpeed
+      second: 0.05
+    - first:
+        name: _InvertIdle
+      second: 1
+    - first:
+        name: _InvertPhase
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Overbright
+      second: 0.182
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _Phase
+      second: 1.0012844
+    - first:
+        name: _PhaseRotation
+      second: 0.25
+    - first:
+        name: _PhaseSharpness
+      second: 0.266
+    - first:
+        name: _Radial
+      second: 0
+    - first:
+        name: _RoundClipping
+      second: 0
+    - first:
+        name: _ScaleAroundTile
+      second: 0
+    - first:
+        name: _ScanlineIntensity
+      second: 0.5
+    - first:
+        name: _Scattering
+      second: 1
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.24264705, g: 0.5925964, b: 1, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 0.9632353, g: 0.49490374, b: 0.24080883, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _ScaleCenter
+      second: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - first:
+        name: _Scaling
+      second: {r: -0.1, g: -0.1, b: 0, a: 0}
+    - first:
+        name: _TileCount
+      second: {r: 100, g: 100, b: 0, a: 0}
