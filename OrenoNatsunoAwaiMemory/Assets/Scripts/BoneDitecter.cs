@@ -24,7 +24,7 @@ public class BoneDitecter : MonoBehaviour {
 
         if (BodyManager == null)
         {
-            Debug.Log("BodyManager == null");
+            //Debug.Log("BodyManager == null");
             return;
         }
 
@@ -32,14 +32,14 @@ public class BoneDitecter : MonoBehaviour {
         var data = BodyManager.GetData();
         if (data == null)
         {
-            Debug.Log("No Body Data");
+            //Debug.Log("No Body Data");
             return;
         }
         // 最初に追跡している人を取得する
         var body = data.FirstOrDefault(b => b.IsTracked);
         if (body == null)
         {
-            Debug.Log("No Tracking");
+            //Debug.Log("No Tracking");
             message.color = defaultColor;
             message.text = "Please stand in front of the Kinect";
             StopCoroutine("Tracking");
