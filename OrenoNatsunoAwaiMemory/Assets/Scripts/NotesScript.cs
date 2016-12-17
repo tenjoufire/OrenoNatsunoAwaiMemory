@@ -5,16 +5,19 @@ public class NotesScript : MonoBehaviour {
 
     public int lineNum;
     private GameManager _gameManager;
+    private CheckShaking chk;
 
     // Use this for initialization
     void Start () {
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        chk = GameObject.Find("KinectAvatar").GetComponent<CheckShaking>();
+
     }
 
 
     void CheckInput(KeyCode key)
     {
-        if (Input.GetKeyDown(key))
+        if (chk.isShaking())
         {
             if (Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) < 3) {//判定ライン(画面の底辺から80の位置)との相対距離で判定つける
                 _gameManager.GoodTimingFunc(1);//perfect

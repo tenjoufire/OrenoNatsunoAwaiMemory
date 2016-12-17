@@ -69,7 +69,7 @@ public class CheckShaking : MonoBehaviour {
         Debug.Log(rightHandPos.Y);
 
         //直前の右手の位置との差を見る
-        if(System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta)
+        if(System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta && rightHandPos.Y < prevRightHandPos)
         {
             trigger = true;
             Debug.Log("meu");

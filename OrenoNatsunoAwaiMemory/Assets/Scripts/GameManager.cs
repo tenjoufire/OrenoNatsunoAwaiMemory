@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public GameObject parentObject;//お前がprefabノーツのママになるんだよ！
     private GameObject OPPanel;
     private Image OPPanelColor;//最初に出すパネルの画像
+    private GameObject _backScreen;//音ゲー要素のパネル
+
     private float titleTime = 5f;//パネルを消し始めるまでの時間
     private GameObject _JudgeLine;//判定ライン
 
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         _audioSource = GameObject.Find("GameMusic").GetComponent<AudioSource>();
         seSource = GameObject.Find("SE").GetComponent<AudioSource>();
         _JudgeLine = GameObject.Find("JudgeLine");
+        _backScreen = GameObject.Find("BackScreen");
 
         OPPanel = GameObject.Find("OPPanel");
         OPPanelColor = GameObject.Find("OPPanel").GetComponent<Image>();
@@ -73,15 +76,22 @@ public class GameManager : MonoBehaviour
     {
         if (_isPlaying)
         {
-            CheckNextNotes();
-            scoreText.text = "SCORE:" + score.ToString();//スコア更新
-            comboText.text = "COMBO:" + combo.ToString();//コンボ数更新
+            if (PlayerPrefs.GetInt("gameOrMv") == 0)//音ゲーモード
+            {
+                CheckNextNotes();
+                scoreText.text = "SCORE:" + score.ToString();//スコア更新
+                comboText.text = "COMBO:" + combo.ToString();//コンボ数更新
+            }
+            if (PlayerPrefs.GetInt("gameOrMv") == 1)//MVモード
+            {
+                _backScreen.SetActive(false);//透明になったらパネル破壊
+            }
         }
 
         if (!_isPlaying)
         {
             titleTime -= Time.deltaTime;
-            if (OPPanel.activeSelf && titleTime<=0)
+            if (OPPanel.activeSelf && titleTime <= 0)
             {
                 var color1 = OPPanelColor.color;
                 var color2 = songTitle.color;
@@ -91,20 +101,16 @@ public class GameManager : MonoBehaviour
                 songTitle.color = color2;
                 if (OPPanelColor.color.a <= 0f)
                 {
-                    if (PlayerPrefs.GetInt("gameOrMv") == 0)
-                    {
-                        StartGame();//ゲーム開始
-                    }
-                    if (PlayerPrefs.GetInt("gameOrMv") == 1) _audioSource.Play();
-                    OPPanel.SetActive(false);//透明になったらパネル破壊
+                    OPPanel.SetActive(false);
+                    StartGame();//ゲーム開始
                 }
+
             }
         }
-
-        if (!_audioSource.isPlaying&&!OPPanel.activeSelf || Input.GetKeyDown(KeyCode.Q))//曲終了の判定
+        if ((!_audioSource.isPlaying && !OPPanel.activeSelf) || Input.GetKeyDown(KeyCode.Q))//曲終了の判定
         {
             //Debug.Log("ｳﾜｰ!!ｷｮｸｵﾜｯﾀｧｧｧｧｧｧｧｧｧｧ");
-            SceneManager.LoadScene("Menu");
+            StartCoroutine("GoToResult");
         }
     }
 
@@ -120,7 +126,7 @@ public class GameManager : MonoBehaviour
         _isPlaying = true;
     }
 
-    
+
 
     void CheckNextNotes()
     {
@@ -139,7 +145,7 @@ public class GameManager : MonoBehaviour
             new Vector3(0, 100.0f, 0),
             Quaternion.identity);//このリキャストたぶんいらない
 
-        prefab.transform.SetParent(parentObject.transform,false);//Canvasの子としてノーツを生成
+        prefab.transform.SetParent(parentObject.transform, false);//Canvasの子としてノーツを生成
 
     }
 
@@ -160,7 +166,7 @@ public class GameManager : MonoBehaviour
             }
             i++;
         }
-       }
+    }
 
     float GetMusicTime()
     {
@@ -169,7 +175,8 @@ public class GameManager : MonoBehaviour
 
     public void GoodTimingFunc(int num)//判定ライン上でキー入力できたときの反応
     {
-        switch (num) {
+        switch (num)
+        {
             case 0:
                 hanteiImage.sprite = miss;
                 combo = 0;
@@ -205,6 +212,12 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+    }
+
+    IEnumerator GoToResult()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Menu");
     }
 }
 
