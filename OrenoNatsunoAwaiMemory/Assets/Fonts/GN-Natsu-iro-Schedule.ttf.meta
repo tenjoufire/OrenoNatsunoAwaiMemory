@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8b4f7f414b647f9468e0156a83d3f08d
+timeCreated: 1481597742
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - GN-Natsu-iro Schedule
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c140a4175bae3ec4eac70c76eeefb1fa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

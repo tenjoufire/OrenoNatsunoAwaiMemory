@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 117f5908d41a75d47a38108272bca249
+timeCreated: 1480336896
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: //RootNode
+    100004: guitar_body
+    100006: guitar_bridge
+    100008: guitar_head
+    100010: guitar_neck
+    100012: guitar_peg1
+    100014: guitar_peg2
+    100016: guitar_peg3
+    100018: guitar_peg4
+    100020: guitar_peg5
+    100022: guitar_peg6
+    100024: guitar_pickup1
+    100026: guitar_pickup2
+    100028: guitar_string1
+    100030: guitar_string2
+    100032: guitar_string3
+    100034: guitar_string4
+    100036: guitar_string5
+    100038: guitar_string6
+    100040: Lamp
+    400000: Camera
+    400002: //RootNode
+    400004: guitar_body
+    400006: guitar_bridge
+    400008: guitar_head
+    400010: guitar_neck
+    400012: guitar_peg1
+    400014: guitar_peg2
+    400016: guitar_peg3
+    400018: guitar_peg4
+    400020: guitar_peg5
+    400022: guitar_peg6
+    400024: guitar_pickup1
+    400026: guitar_pickup2
+    400028: guitar_string1
+    400030: guitar_string2
+    400032: guitar_string3
+    400034: guitar_string4
+    400036: guitar_string5
+    400038: guitar_string6
+    400040: Lamp
+    2300000: guitar_body
+    2300002: guitar_bridge
+    2300004: guitar_head
+    2300006: guitar_neck
+    2300008: guitar_peg1
+    2300010: guitar_peg2
+    2300012: guitar_peg3
+    2300014: guitar_peg4
+    2300016: guitar_peg5
+    2300018: guitar_peg6
+    2300020: guitar_pickup1
+    2300022: guitar_pickup2
+    2300024: guitar_string1
+    2300026: guitar_string2
+    2300028: guitar_string3
+    2300030: guitar_string4
+    2300032: guitar_string5
+    2300034: guitar_string6
+    3300000: guitar_body
+    3300002: guitar_bridge
+    3300004: guitar_head
+    3300006: guitar_neck
+    3300008: guitar_peg1
+    3300010: guitar_peg2
+    3300012: guitar_peg3
+    3300014: guitar_peg4
+    3300016: guitar_peg5
+    3300018: guitar_peg6
+    3300020: guitar_pickup1
+    3300022: guitar_pickup2
+    3300024: guitar_string1
+    3300026: guitar_string2
+    3300028: guitar_string3
+    3300030: guitar_string4
+    3300032: guitar_string5
+    3300034: guitar_string6
+    4300000: guitar_string1
+    4300002: guitar_pickup1
+    4300004: guitar_bridge
+    4300006: guitar_head
+    4300008: guitar_neck
+    4300010: guitar_body
+    4300012: guitar_pickup2
+    4300014: guitar_peg1
+    4300016: guitar_peg2
+    4300018: guitar_peg3
+    4300020: guitar_peg4
+    4300022: guitar_peg5
+    4300024: guitar_peg6
+    4300026: guitar_string2
+    4300028: guitar_string3
+    4300030: guitar_string4
+    4300032: guitar_string5
+    4300034: guitar_string6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
