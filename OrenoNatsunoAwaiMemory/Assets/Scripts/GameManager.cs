@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
     public AudioClip se4;
     public AudioClip se0;
 
+    public CheckShaking chk;
+
 
     void Start()
     {
@@ -84,7 +86,8 @@ public class GameManager : MonoBehaviour
             }
             if (PlayerPrefs.GetInt("gameOrMv") == 1)//MVモード
             {
-                _backScreen.SetActive(false);//透明になったらパネル破壊
+                //_backScreen.SetActive(false);//透明になったらパネル破壊
+                parentObject.SetActive(false);//透明になったらパネル破壊
             }
         }
 

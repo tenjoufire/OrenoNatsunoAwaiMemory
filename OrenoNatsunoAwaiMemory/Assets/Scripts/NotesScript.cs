@@ -10,7 +10,7 @@ public class NotesScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        chk = GameObject.Find("KinectAvatar").GetComponent<CheckShaking>();
+        chk = _gameManager.chk;
 
     }
 
@@ -57,7 +57,7 @@ public class NotesScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        this.transform.position += Vector3.down*60*Time.deltaTime;
+        this.transform.position += Vector3.down*150*Time.deltaTime;
         if(this.transform.position.y < -1f)
         {
             Destroy(this.gameObject);//下まで行ったら消滅させる
