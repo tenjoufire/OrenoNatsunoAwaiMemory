@@ -205,7 +205,7 @@ public class GameManager : MonoBehaviour
             case 3:
                 hanteiImage.sprite = good;
                 score += 100;
-                combo = 0;
+                combo++;
                 seSource.clip = se3;
                 seSource.Play();
                 break;
