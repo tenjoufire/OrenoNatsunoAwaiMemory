@@ -11,6 +11,8 @@ public class CheckShaking : MonoBehaviour {
     private Quaternion prevRightWristPos = new Quaternion();
     private float prevRightHandPos = 0f;
     private bool trigger = false;
+    private bool down = false;
+    private bool up = false;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +22,8 @@ public class CheckShaking : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         trigger = false;
+        up = false;
+        down = false;
 
         if (BodyManager == null)
         {
@@ -66,13 +70,27 @@ public class CheckShaking : MonoBehaviour {
 
         //右手の位置を保存
         var rightHandPos = body.Joints[JointType.HandRight].Position;
-        Debug.Log(rightHandPos.Y);
+        //Debug.Log(rightHandPos.Y);
 
         //直前の右手の位置との差を見る
-        if(System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta && rightHandPos.Y < prevRightHandPos)
+        if(System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta)
         {
             trigger = true;
-            Debug.Log("meu");
+            //Debug.Log("meu");
+        }
+
+        //直前の右手の位置との差を見る
+        if (System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta && rightHandPos.Y > prevRightHandPos)
+        {
+            up = true;
+            //Debug.Log("up");
+        }
+
+        //直前の右手の位置との差を見る
+        if (System.Math.Abs(rightHandPos.Y - prevRightHandPos) > delta && rightHandPos.Y < prevRightHandPos)
+        {
+            down = true;
+            //Debug.Log("down");
         }
 
         //現在の右手の位置を保存
@@ -84,5 +102,15 @@ public class CheckShaking : MonoBehaviour {
     public bool isShaking()
     {
         return trigger;
+    }
+
+    public bool UpShaking()
+    {
+        return up;
+    }
+
+    public bool DownShaking()
+    {
+        return down;
     }
 }

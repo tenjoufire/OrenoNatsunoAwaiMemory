@@ -145,11 +145,12 @@ public class GameManager : MonoBehaviour
         //Debug.Log("spawn notes.");//Debug
         //Debug.Log(_notesCount);
         GameObject prefab = (GameObject)Instantiate(notes[num],
-            new Vector3(0, 100.0f, 0),
+            new Vector3(0, _JudgeLine.transform.position.y + 800f, 0),
+            //transform.InverseTransformPoint(0, _JudgeLine.transform.position.y, 0),
             Quaternion.identity);//このリキャストたぶんいらない
 
-        prefab.transform.SetParent(parentObject.transform, false);//Canvasの子としてノーツを生成
-
+        prefab.transform.SetParent(_JudgeLine.transform, false);//Canvasの子としてノーツを生成
+        Debug.Log(prefab.transform.position.y + "  " + _JudgeLine.transform.position.y);
     }
 
     void LoadCSV()
@@ -164,7 +165,7 @@ public class GameManager : MonoBehaviour
             string[] values = line.Split(',');
             for (j = 0; j < values.Length; j++)
             {
-                _timing[i] = float.Parse(values[0]);
+                _timing[i] = float.Parse(values[0]) - 1.45f; //ノーツだすタイミングを調整     
                 _lineNum[i] = int.Parse(values[1]);
             }
             i++;
@@ -178,6 +179,7 @@ public class GameManager : MonoBehaviour
 
     public void GoodTimingFunc(int num)//判定ライン上でキー入力できたときの反応
     {
+
         switch (num)
         {
             case 0:

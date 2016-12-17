@@ -38,7 +38,11 @@ public class TimingCreate : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            WriteNotesTiming(0);//ノート1つと仮定してるので1パターンのみ生成
+            WriteNotesTiming(0);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            WriteNotesTiming(1);
         }
 
 
