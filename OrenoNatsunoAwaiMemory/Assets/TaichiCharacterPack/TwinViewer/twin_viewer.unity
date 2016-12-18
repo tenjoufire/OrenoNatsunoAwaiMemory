@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 199281386}
   initTarget: {fileID: 199281386}
-  mode: 726f7465
+  mode: rote
   x: 180
   y: 20
   distance: 1.8
@@ -357,38 +357,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiSkin: {fileID: 11400000, guid: ae153894bda7dfd4aacc8948ca70ce9d, type: 2}
   viewCam: {fileID: 1495456320}
-  boneName: 48697073
+  boneName: Hips
   camGuiBodyRect:
+    serializedVersion: 2
     x: 200
     y: -80
     width: 284
     height: 52
   modelBodyRect:
+    serializedVersion: 2
     x: 10
     y: 10
     width: 100
     height: 500
   textGuiBodyRect:
+    serializedVersion: 2
     x: 10
     y: 510
     width: 260
     height: 70
   sliderGuiBodyRect:
+    serializedVersion: 2
     x: 125
     y: 295
     width: 145
     height: 200
   sliderTextBodyRect:
+    serializedVersion: 2
     x: 10
     y: 295
     width: 110
     height: 213
   guiOnButtonRect:
+    serializedVersion: 2
     x: 520
     y: -80
     width: 218
     height: 500
   guiOnBGRect:
+    serializedVersion: 2
     x: 180
     y: -158
     width: 600
@@ -406,28 +413,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiSkin: {fileID: 11400000, guid: ae153894bda7dfd4aacc8948ca70ce9d, type: 2}
   viewCam: {fileID: 1495456320}
-  boneName: 48697073
+  boneName: Hips
   camGuiBodyRect:
+    serializedVersion: 2
     x: 870
     y: 25
     width: 93
     height: 420
   modelBodyRect:
+    serializedVersion: 2
     x: 840
     y: 10
     width: 100
     height: 500
   textGuiBodyRect:
+    serializedVersion: 2
     x: 680
     y: 514
     width: 260
     height: 70
   sliderGuiBodyRect:
+    serializedVersion: 2
     x: 680
     y: 300
     width: 145
     height: 200
   sliderTextBodyRect:
+    serializedVersion: 2
     x: 830
     y: 300
     width: 110

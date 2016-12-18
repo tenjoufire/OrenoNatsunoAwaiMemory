@@ -148,54 +148,61 @@ MonoBehaviour:
   animTest: {fileID: 100240, guid: aa68ca2dd3fb0914390186cd6830caed, type: 3}
   guiSkin: {fileID: 11400000, guid: 4e358f4e18f1ae64cb6eeb6627dbb7cb, type: 2}
   viewCam: {fileID: 1495456319}
-  boneName: 48697073
+  boneName: Hips
   camGuiRootRect:
+    serializedVersion: 2
     x: 884
     y: 0
     width: 93
     height: 420
   camGuiBodyRect:
+    serializedVersion: 2
     x: 884
     y: 43
     width: 93
     height: 345
   guiOnBodyRect:
+    serializedVersion: 2
     x: 45
     y: 60
     width: 57.6
     height: 57.6
   sliderTextBodyRect:
+    serializedVersion: 2
     x: 0
     y: 0
     width: 100
     height: 170
   sliderGuiBodyRect:
+    serializedVersion: 2
     x: 0
     y: 0
     width: 100
     height: 170
   textGuiBodyRect:
+    serializedVersion: 2
     x: 20
     y: 510
     width: 300
     height: 70
   modelBodyRect:
+    serializedVersion: 2
     x: 20
     y: 60
     width: 300
     height: 500
-  FBXListFile: 6662785f6c697374
-  AnimationListFile: 616e696d6174696f6e5f6c697374
-  TitleTextFile: 7469746c655f74657874
+  FBXListFile: fbx_list
+  AnimationListFile: animation_list
+  TitleTextFile: title_text
   guiOn: 1
   facialMaterial_M_org: {fileID: 2100000, guid: d2e274d663113f043b4457ea6be2df4c,
     type: 2}
   facialMaterial_L_org: {fileID: 2100000, guid: fd7b6d615975a2a49b801a278cb677c5,
     type: 2}
-  FacialTexListFile: 66616369616c5f746578747572655f6c6973745f61
+  FacialTexListFile: facial_texture_list_a
   ParticleListFile: 
   ParticleAnimationListFile: 
-  facialMatName: 6d30315f666163655f3030
+  facialMatName: m01_face_00
 --- !u!4 &670167872
 Transform:
   m_ObjectHideFlags: 0
@@ -389,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 199281386}
-  mode: 726f7465
+  mode: rote
   x: 180
   y: 20
   distance: 1.7
