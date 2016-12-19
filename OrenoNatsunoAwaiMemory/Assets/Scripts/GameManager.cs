@@ -222,7 +222,23 @@ public class GameManager : MonoBehaviour
     IEnumerator GoToResult()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Menu");
+        int real = 0;
+        if (score < 20000) real = 10;
+        else if (score < 50000) real = 20;
+        else if (score < 80000) real = 40;
+        else if (score < 100000) real = 60;
+        else if (score < 130000) real = 80;
+        else real = 100;
+        PlayerPrefs.SetInt("Real", real);
+        if(PlayerPrefs.GetInt("gameOrMv") == 0)
+        {
+            SceneManager.LoadScene("fireworks");
+        }
+        else
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        
     }
 }
 
