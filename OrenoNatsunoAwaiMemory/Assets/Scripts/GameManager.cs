@@ -190,21 +190,21 @@ public class GameManager : MonoBehaviour
                 break;
             case 1:
                 hanteiImage.sprite = perfect;
-                score += 1000;
+                score += 1000 + (combo * 50);
                 combo++;
                 seSource.clip = se1;
                 seSource.Play();
                 break;
             case 2:
                 hanteiImage.sprite = great;
-                score += 500;
+                score += 500 + (combo * 50);
                 combo++;
                 seSource.clip = se2;
                 seSource.Play();
                 break;
             case 3:
                 hanteiImage.sprite = good;
-                score += 100;
+                score += 100 + (combo * 50);
                 combo++;
                 seSource.clip = se3;
                 seSource.Play();

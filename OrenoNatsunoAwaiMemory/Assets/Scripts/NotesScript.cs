@@ -19,7 +19,7 @@ public class NotesScript : MonoBehaviour {
     {
         if ((key == KeyCode.Space&&chk.UpShaking())||(key == KeyCode.A&&chk.DownShaking()))
         {
-            if (Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) < 25) {//判定ライン(画面の底辺から80の位置)との相対距離で判定つける
+            if (Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) < 30) {//判定ライン(画面の底辺から80の位置)との相対距離で判定つける
                 _gameManager.GoodTimingFunc(1);//perfect
                 Destroy(this.gameObject);
                 }
@@ -29,7 +29,7 @@ public class NotesScript : MonoBehaviour {
                 _gameManager.GoodTimingFunc(2);//great
                 Destroy(this.gameObject);
             }*/
-            if (Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) > 25 && Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) < 40)
+            if (Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) > 30 && Mathf.Abs(this.transform.position.y - _gameManager.GetJudge()) < 40)
             {
                 _gameManager.GoodTimingFunc(3);//good
                 Destroy(this.gameObject);

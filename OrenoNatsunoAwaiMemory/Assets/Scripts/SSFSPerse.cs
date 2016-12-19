@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SSFSPerse : MonoBehaviour {
 
+    public float initRange = 1.0f;
     public float interval;
 
     private Renderer renderer;
@@ -20,10 +21,10 @@ public class SSFSPerse : MonoBehaviour {
 
     IEnumerator PhaseMove()
     {
-        float range = 1.0f;
+        float range = initRange;
         while (true)
         {
-            while (range > 0f)
+            while (range >= 0f)
             {
                 renderer.material.EnableKeyword("_Phase");
                 renderer.material.SetFloat("_Phase", range);
@@ -33,7 +34,7 @@ public class SSFSPerse : MonoBehaviour {
 
             yield return new WaitForSeconds(interval);
 
-            while(range <= 1.0f)
+            while(range <= 1.01f)
             {
                 renderer.material.EnableKeyword("_Phase");
                 renderer.material.SetFloat("_Phase", range);

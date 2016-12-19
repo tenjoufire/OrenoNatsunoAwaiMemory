@@ -21,7 +21,7 @@ public class ChangeScene : MonoBehaviour {
 
     public void goGame1()
     {
-        SceneManager.LoadScene("Game1");
+        SceneManager.LoadScene("SCGdiscription");
     }
 
     public void goGame2()
