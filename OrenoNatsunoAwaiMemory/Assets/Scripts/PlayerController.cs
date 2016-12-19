@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
     private bool isNunning = false;
 
     public int waitingTime;
+    public PointCalicuration point;
 
 
     // Use this for initialization
@@ -195,7 +196,15 @@ public class PlayerController : MonoBehaviour
     IEnumerator NextScene()
     {
         yield return new WaitForSeconds(waitingTime);
-        SceneManager.LoadScene("Menu");
+        int real = 0;
+        int p = point.ScoreCheck();
+        if (p < 7) real = 10;
+        else if (p < 9) real = 20;
+        else if (p < 11) real = 50;
+        else if (p < 15) real = 80;
+        else real = 100;
+        PlayerPrefs.SetInt("Real", real);
+        SceneManager.LoadScene("fireworks");
     }
 
     // 点数計算用関数

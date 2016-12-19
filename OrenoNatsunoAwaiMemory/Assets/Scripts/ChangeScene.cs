@@ -33,4 +33,9 @@ public class ChangeScene : MonoBehaviour {
     {
         SceneManager.LoadScene("Game3");
     }
+
+    public void goTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
