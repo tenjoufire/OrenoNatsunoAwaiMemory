@@ -54,8 +54,11 @@ public class GameManager : MonoBehaviour
     public AudioClip se3;
     public AudioClip se4;
     public AudioClip se0;
+    public AudioClip end;
 
     public CheckShaking chk;
+
+    private bool running = false;
 
 
     void Start()
@@ -221,6 +224,11 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GoToResult()
     {
+        if (running) yield break;
+        running = true;
+        //yield return new WaitForSeconds(0);
+        _audioSource.clip = end;
+        _audioSource.Play();
         yield return new WaitForSeconds(5);
         int real = 0;
         if (score < 20000) real = 10;
